@@ -8,12 +8,7 @@ module.exports = {
         browser: true,
         es2021: true
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'prettier'
-    ],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -22,10 +17,10 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module'
     },
-    plugins: ['react', '@typescript-eslint', 'prettier'],
+    plugins: ['react', 'prettier'],
     rules: {
         'no-undef': 0,
-        'no-unused-vars': 2,
+        'no-unused-vars': 0,
         'no-useless-escape': 0,
         'no-case-declarations': 0,
         'prettier/prettier': 2
